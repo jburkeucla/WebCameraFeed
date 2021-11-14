@@ -589,7 +589,7 @@ void AVFoundationVideoGrabber::updatePixelsCB(unsigned char *isrc, int w, int h 
         return;
     
     if ( mirroredTexture.IsValid()) {
-        if ( mirroredTexture->Resource == NULL) {
+        if ( mirroredTexture->Resource == nullptr) {
             frwLock.WriteLock();
             cameraTexture.Reset();
             mirroredTexture.Reset();
